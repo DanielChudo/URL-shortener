@@ -16,7 +16,11 @@ app.use(
     origin: process.env.CLIENT_URL,
   })
 );
-console.log(process.env.NODE_ENV);
+
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/link', require('./routes/link'));
+app.use('/t', require('./routes/redirect'));
+
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('../client/build'));
 
@@ -24,10 +28,6 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
   });
 }
-
-app.use('/api/auth', require('./routes/auth'));
-app.use('/api/link', require('./routes/link'));
-app.use('/t', require('./routes/redirect'));
 
 app.use(errorMiddleware);
 
