@@ -1,0 +1,18 @@
+#navbar {
+  background-color: var(--main);
+  display: flex;
+  height: 52px;
+}
+
+#navbar a {
+  display: inline-block;
+  line-height: 52px;
+  color: white;
+  padding: 0px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar a:hover {
+  background-color: var(--main-dark);
+}

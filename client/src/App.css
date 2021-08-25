@@ -1,0 +1,100 @@
+:root {
+  --error: #e74c3c;
+  --remark: #636e72;
+  --main: #2a5bd7;
+  --main-dark: #244fbb;
+}
+
+body {
+  background-color: #edeef0;
+}
+
+h1,
+h2 {
+  font-size: 36pt;
+  line-height: 100%;
+  width: fit-content;
+  font-weight: 700;
+  color: var(--main);
+}
+
+h2 {
+  font-size: 32pt;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+input {
+  padding: 4px;
+  margin-bottom: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  color: #fff;
+  background-color: var(--main);
+  padding: 4px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:active {
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+
+a {
+  color: var(--main);
+}
+
+#content {
+  padding: 16px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 16px;
+}
+
+.border {
+  border: 2px solid var(--main);
+  border-radius: 8px;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+div.error {
+  text-align: center;
+  background-color: #fff;
+  padding: 16px;
+  color: var(--error);
+  border: 2px solid var(--error);
+  border-radius: 8px;
+}
+
+div.isFetching {
+  position: relative;
+}
+
+div.isFetching::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.remark {
+  font-size: 12pt;
+  color: var(--remark);
+}

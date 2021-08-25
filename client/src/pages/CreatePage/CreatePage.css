@@ -1,0 +1,12 @@
+#create {
+  margin-bottom: 16px;
+}
+
+#create form {
+  display: flex;
+  flex-direction: column;
+}
+
+#create h1 {
+  margin-bottom: 16px;
+}

@@ -1,0 +1,74 @@
+#auth {
+  width: 512px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+#auth div:nth-child(2) {
+  overflow-y: hidden;
+}
+
+#auth div.error {
+  margin-bottom: 16px;
+}
+
+#auth #password {
+  margin-bottom: 0;
+}
+
+#auth .remark {
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+#auth h1 {
+  text-align: center;
+  margin-bottom: 16px;
+  width: auto;
+}
+
+#auth form {
+  display: flex;
+  flex-direction: column;
+}
+
+#auth button[type='submit'] {
+  margin-bottom: 8px;
+}
+
+.jumping {
+  position: relative;
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 0;
+  }
+  30% {
+    top: 80px;
+  }
+  60% {
+    top: -10px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+#auth__button_change-form {
+  color: var(--main);
+  font-size: 12pt;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#auth__button_change-form:active {
+  padding-top: 0;
+  padding-bottom: 0;
+}

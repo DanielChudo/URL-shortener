@@ -1,0 +1,16 @@
+#details h2,
+#details p {
+  margin-bottom: 16px;
+}
+
+#details p:last-child {
+  margin-bottom: 0;
+}
+
+#details a {
+  margin-left: 8px;
+}
+
+#details strong {
+  margin-left: 8px;
+}

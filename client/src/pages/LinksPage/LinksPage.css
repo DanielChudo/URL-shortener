@@ -1,0 +1,27 @@
+#links table {
+  width: 100%;
+}
+
+#links table th,
+#links table td {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 16px 0;
+}
+
+#links table tr:last-child td {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+#links table tr:first-child th {
+  padding-top: 0;
+}
+
+#links table th {
+  font-weight: 700;
+}
+
+#links a:not([target='_blank']) {
+  text-decoration: none;
+}
