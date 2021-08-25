@@ -16,7 +16,7 @@ app.use(
     origin: process.env.CLIENT_URL,
   })
 );
-
+console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('../client/build'));
 
