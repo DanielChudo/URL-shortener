@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-function LinkItem(props) {
-  const { link, index } = props;
+function LinkItem({ link, index }) {
   const { originalLink, shortLink, code } = link;
   return (
     <tr>
